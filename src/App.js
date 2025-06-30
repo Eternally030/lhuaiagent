@@ -93,6 +93,7 @@ function App() {
   };
 
   // 語音合成
+  
   const speakResponse = (text) => {
     if (!('speechSynthesis' in window)) return;
     const utterance = new SpeechSynthesisUtterance(text);
@@ -113,7 +114,7 @@ function App() {
     const aiResponseText = await getAIResponse(messageText);
     setIsLoading(false);
     setMessages(prev => [...prev, { sender: 'ai', text: aiResponseText }]);
-    speakResponse(aiResponseText);
+    //speakResponse(aiResponseText);
   }, [userInput]);
 
   // 按住/放開錄音
@@ -149,6 +150,7 @@ function App() {
     >
       <header className="app-header">
         <h1>LHU Speaker</h1>
+        {/*
         <div className="header-right-panel">
           <div className="weather-module">
             {isLoadingWeather ? '...' : weather ? (
@@ -159,6 +161,7 @@ function App() {
             {currentTime.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false })}
           </div>
         </div>
+        */}
       </header>
 
       <div className="side-buttons">
