@@ -151,6 +151,7 @@ function App() {
       <header className="app-header">
         <h1>LHU Speaker</h1>
         {/*
+        
         <div className="header-right-panel">
           <div className="weather-module">
             {isLoadingWeather ? '...' : weather ? (
