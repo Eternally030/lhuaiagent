@@ -191,6 +191,7 @@ function App() {
         >
           🎤
         </button>
+        <span style={{ marginLeft: '12px' }}>按住說話</span>
       </div>
 
       <div className="bottom-input-bar">
